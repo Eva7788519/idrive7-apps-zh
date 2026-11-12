@@ -2,6 +2,7 @@
   "id": "car_vitals",
   "title": "M Vitals",
   "description": "Live engine, thermal, intake / fuel / ignition, tyre and chassis gauges",
+  "texts": {"zh-CN": {"title": "M 车辆仪表", "description": "实时显示发动机、温度、进气、燃油、点火、轮胎和底盘数据。"}},
   "version": "2.27.1",
   "vendor": "custom",
   "loggingId": "OA93",

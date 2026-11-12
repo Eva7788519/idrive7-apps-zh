@@ -2,6 +2,7 @@
   "id": "zf8hp",
   "title": "Transmission Config",
   "description": "Transmission Config, experimental ZF 8HP monitor: live data, clutch fill adaptations, shift maps and temperature history",
+  "texts": {"zh-CN": {"title": "变速箱配置", "description": "实验性 ZF 8HP 变速箱监测，查看实时数据、离合器充油自适应、换挡图谱和温度历史。"}},
   "version": "1.5.6",
   "vendor": "custom",
   "loggingId": "OAA2",

@@ -2,6 +2,7 @@
   "id": "draggy",
   "title": "Drag Timer",
   "description": "0-100, 100-200 and 1/4 mile timer with best times",
+  "texts": {"zh-CN": {"title": "加速计时", "description": "记录 0–100、100–200 和四分之一英里加速用时及最佳成绩。"}},
   "version": "2.5.20",
   "vendor": "custom",
   "loggingId": "OA94",

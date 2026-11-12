@@ -2,6 +2,7 @@
   "id": "redline",
   "title": "Redline",
   "description": "Full-screen rev tach with shift lights, gear, shift scoring and cold-engine rev guard; HUD by @biscotit",
+  "texts": {"zh-CN": {"title": "换挡转速", "description": "全屏转速表，带换挡灯、挡位、换挡评分和冷机转速保护。HUD 由 @biscotit 制作。"}},
   "version": "2.0.39",
   "vendor": "custom",
   "loggingId": "OA97",

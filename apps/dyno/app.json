@@ -2,6 +2,7 @@
   "id": "dyno",
   "title": "Virtual Dyno",
   "description": "Power and torque curves from a full-throttle pull, saved and compared",
+  "texts": {"zh-CN": {"title": "虚拟马力机", "description": "记录全油门加速的功率与扭矩曲线，支持保存和比较。"}},
   "version": "1.6.1",
   "vendor": "custom",
   "loggingId": "OA98",

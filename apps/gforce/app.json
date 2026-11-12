@@ -2,6 +2,7 @@
   "id": "gforce",
   "title": "G-Force",
   "description": "Friction circle with grip envelope, peak g per direction and session records",
+  "texts": {"zh-CN": {"title": "G 值仪表", "description": "显示抓地力包络、各方向 G 值峰值和本次行驶记录。"}},
   "version": "1.6.21",
   "vendor": "custom",
   "loggingId": "OA9B",

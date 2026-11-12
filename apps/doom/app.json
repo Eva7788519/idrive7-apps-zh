@@ -2,6 +2,7 @@
   "id": "doom",
   "title": "Doom",
   "description": "Doom (Freedoom: Phase 1) on the iDrive. Main menu with all settings; the game drawn in full resolution across the whole screen, on the controller; BACK returns to the menu and saves",
+  "texts": {"zh-CN": {"title": "毁灭战士", "description": "在 iDrive 上游玩《毁灭战士》（Freedoom 第一章）。用旋钮操作全屏游戏，按返回键保存并回到主菜单。"}},
   "version": "1.7.20",
   "vendor": "custom",
   "loggingId": "OA9F",

@@ -28,7 +28,7 @@ const { Lights } = require('./lights');
 const { Control } = require('./control');
 const { Others } = require('./others');
 const { Strobe } = require('./strobe');
-const { t: translate } = require('./kit/i18n');
+const { t: translate, getLanguage } = require('./kit/i18n');
 const { drawCabin } = require('./cabin');
 const { sample } = require('./lin');
 const S = require('./scenes');
@@ -186,12 +186,15 @@ mgu.run({
         // another ambient app's service writing the same lights: says so in place of the status, wrapped to width w
         const COMFORT_WARNING = 'IterioDev\'s Comfort tool is running. It changes the ambient lights too, so the colours jump ' +
             'between the two apps. Uninstall it in the Store (Installed, Head-unit tools, Comfort) and use one ambient app at a time.';
+        const modeText = (text) => translate(text).replace('{mode}', translate(MODE_NAMES[editing]));
         function warnOthers(cv, t, x, y, w) {
             cv.text('Another ambient app', x, y, 22, t.warn, { font: 'bold' });
             const lines = [];
             // translated whole before wrapping, so a localized build wraps its own sentence
-            translate(COMFORT_WARNING).split(' ').forEach((word) => {
-                const last = lines.length - 1, joined = last >= 0 ? lines[last] + ' ' + word : word;
+            const warning = translate(COMFORT_WARNING);
+            const separator = getLanguage() === 'zh-CN' ? '' : ' ';
+            warning.split(separator).forEach((word) => {
+                const last = lines.length - 1, joined = last >= 0 ? lines[last] + separator + word : word;
                 if (last >= 0 && cv.textWidth(joined, 18, { literal: true }) <= w) lines[last] = joined; else lines.push(word);
             });
             lines.forEach((line, i) => cv.text(line, x, y + 30 + i * 24, 18, t.text, { literal: true }));
@@ -201,7 +204,7 @@ mgu.run({
             const n = lights.lights.length;
             const s = lights.state === 'finding' ? 'Looking for the car\'s lights...'
                 : lights.state === 'none' ? 'The car\'s lights did not answer'
-                    : lights.state === 'car' ? 'Original colour (as set in BMW\'s menu)' : 'On in the car: ' + n + ' lights';
+                    : lights.state === 'car' ? 'Original colour (as set in BMW\'s menu)' : translate('On in the car: {count} lights').replace('{count}', n);
             cv.text(s, x, y, 20, lights.state === 'none' ? t.warn : t.dim);
             if (lights.error && lights.state !== 'none') cv.text(lights.error, x, y + 26, 18, t.warn);
         }
@@ -210,7 +213,7 @@ mgu.run({
 
         function drawColour(cv, t) {
             const l = look(), c = partColour(l), sel = nearest(c.rgb);
-            G.panel(cv, t, 24, 44, 736, 468, editing ? 'Colour for ' + MODE_NAMES[editing] : 'Colour');
+            G.panel(cv, t, 24, 44, 736, 468, editing ? modeText('Colour for {mode}') : 'Colour');
             cv.arc(RING.cx, RING.cy, RING.r, RING.R, 0, 360, '#ff0000', { ramp: ['#ff0000', '#ffff00', '#00ff00', '#00ffff', '#0000ff', '#ff00ff', '#ff0000'], rampFrom: 0, rampTo: 360 });
             const h = S.hueOf(c.rgb), a = (90 - h) * Math.PI / 180, rm = (RING.R + RING.r) / 2;
             const kx = RING.cx + Math.cos(a) * rm, ky = RING.cy - Math.sin(a) * rm;
@@ -235,7 +238,7 @@ mgu.run({
             G.button(cv, t, 580, 464, 64, 44, '-', () => setBright(c.bright - 10), { key: 'b-' });
             G.button(cv, t, 666, 464, 64, 44, '+', () => setBright(c.bright + 10), { key: 'b+' });
 
-            G.panel(cv, t, 776, 44, 800, 468, editing ? MODE_NAMES[editing] + ' will look' : 'In the car');
+            G.panel(cv, t, 776, 44, 800, 468, editing ? modeText('{mode} will look') : 'In the car');
             if (lights.state === 'none' && !editing) return drawBmwColours(cv, t);
             drawCabin(cv, t, { x: 790, y: 92, w: 330, h: 404 }, shown(), pictureOf(carNow, l), { rhd: rhd() });
             const x = 1150;
@@ -251,8 +254,8 @@ mgu.run({
 
         // changing a driving mode's look: which mode, and Done back to the Driving modes tab
         function editBar(cv, t, x) {
-            cv.text('Changing ' + MODE_NAMES[editing] + '\'s look', x, 222, 22, t.text, { font: 'bold' });
-            cv.text('It shows whenever ' + MODE_NAMES[editing] + ' is on.', x, 250, 18, t.dim);
+            cv.text(modeText("Changing {mode}'s look"), x, 222, 22, t.text, { font: 'bold' });
+            cv.text(modeText('It shows whenever {mode} is on.'), x, 250, 18, t.dim);
             G.button(cv, t, x, 280, 268, 48, 'Done', done, { primary: true, key: 'done' });
         }
 
@@ -272,7 +275,7 @@ mgu.run({
 
         function drawAnimations(cv, t) {
             const l = look();
-            G.panel(cv, t, 24, 44, 640, 468, editing ? 'Animation for ' + MODE_NAMES[editing] : 'Animation');
+            G.panel(cv, t, 24, 44, 640, 468, editing ? modeText('Animation for {mode}') : 'Animation');
             const kinds = [['solid', 'No animation, a steady colour'], ['breathing', 'Slowly brighter and dimmer'], ['rainbow', 'Every colour in turn'],
                 ['fade', 'Upper colour to lower colour and back'], ['wave', 'Colour moving from the dash to the rear']];
             kinds.forEach(([k, d], i) => {
@@ -285,7 +288,7 @@ mgu.run({
                 G.button(cv, t, 120 + i * 150, 440, 136, 48, n, () => { setLook({ speed: v }); return redraw(); }, { primary: (l.speed || 2) === v, key: 'sp-' + v });
             });
 
-            G.panel(cv, t, 678, 44, 898, 468, editing ? MODE_NAMES[editing] + ' will look' : 'In the car');
+            G.panel(cv, t, 678, 44, 898, 468, editing ? modeText('{mode} will look') : 'In the car');
             // the picture shows the animation picked even before the car has answered
             const preview = (x) => (lights.scene ? lights.at(x) : control.on() ? S.lightAt(l, x, Date.now() - T0) : null);
             drawCabin(cv, t, { x: 700, y: 92, w: 420, h: 404 }, shown(), pictureOf(preview, l), { rhd: rhd() });

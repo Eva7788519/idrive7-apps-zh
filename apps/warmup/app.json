@@ -2,6 +2,7 @@
   "id": "warmup",
   "title": "Warm-Up",
   "description": "Oil and coolant warm-up calculator (time to ready), safe rev limit and turbo cool-down",
+  "texts": {"zh-CN": {"title": "暖机助手", "description": "估算机油与冷却液达到工作温度的时间，并显示冷机转速限制和涡轮冷却状态。"}},
   "version": "1.7.4",
   "vendor": "custom",
   "loggingId": "OA9A",

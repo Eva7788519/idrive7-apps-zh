@@ -2,6 +2,7 @@
   "id": "service",
   "title": "Service",
   "description": "Service requirements from the instrument cluster: oil, brakes, brake fluid, vehicle check, inspection - distance, date, details; brake fluid and vehicle check reset",
+  "texts": {"zh-CN": {"title": "保养信息", "description": "查看仪表中的机油、制动、制动液、车辆检查及年检到期里程和日期，支持复位制动液与车辆检查项目。"}},
   "version": "1.6.1",
   "vendor": "custom",
   "loggingId": "OA96",

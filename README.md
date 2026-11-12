@@ -1,5 +1,7 @@
 **English** | [中文 (Chinese translation)](README.zh-CN.md) | [Русский (Russian translation)](README.ru.md) | [한국어 수정본](README.ko.md)
 
+**简体中文版 MGU Store 来源** — `Eva7788519/idrive7-apps-zh` · 汉化补译：5vess-
+
 <h1 align="center">Idrive Custom Apps</h1>
 
 <p align="center">

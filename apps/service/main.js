@@ -67,6 +67,11 @@ function parseDue(s, now) {
         left: months > 0 ? n + '개월 후' : months === 0 ? '이번 달' : n + '개월 초과',
         months,
     };
+    if (getLanguage() === 'zh-CN') return {
+        text: y + '年' + mo + '月' + (d ? d + '日' : ''),
+        left: months > 0 ? n + '个月后' : months === 0 ? '本月' : '已逾期 ' + n + ' 个月',
+        months,
+    };
     const month = d && getLanguage() === 'ru' ? MONTHS_RU_GENITIVE[mo - 1] : translate(MONTHS[mo - 1]);
     return {
         text: (d ? d + ' ' : '') + month + ' ' + y,

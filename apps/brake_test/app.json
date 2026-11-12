@@ -2,6 +2,7 @@
   "id": "brake_test",
   "title": "Brake Test",
   "description": "100-0 and 200-0 braking distance, peak decel and brake-fade tracking",
+  "texts": {"zh-CN": {"title": "制动测试", "description": "测量 100–0 和 200–0 制动距离、峰值减速度，并记录制动热衰减。"}},
   "version": "1.5.20",
   "vendor": "custom",
   "loggingId": "OA99",

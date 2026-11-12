@@ -2,6 +2,7 @@
   "id": "dtc_scanner",
   "title": "Fault Scanner",
   "description": "Read and clear fault memory of every control unit, plus active Check Control messages",
+  "texts": {"zh-CN": {"title": "故障检测", "description": "读取和清除各控制单元的故障记录，并查看当前车辆检查控制信息。"}},
   "version": "2.9.7",
   "vendor": "custom",
   "loggingId": "OA95",

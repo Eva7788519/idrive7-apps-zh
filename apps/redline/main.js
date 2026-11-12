@@ -49,6 +49,7 @@
 const mgu = require('./kit/mgu');
 const { withAlpha, ramp } = require('./kit/canvas');
 const G = require('./kit/gauges');
+const { t: translate } = require('./kit/i18n');
 const Car = require('./kit/car');
 const Engine = require('./kit/engine');
 const Hud = require('./hud');
@@ -646,7 +647,7 @@ mgu.run({
             // Comfort / Eco Pro on Don't show: say so over the preview (the setup under it stays)
             if (comfort && cmode === 'hide') {
                 cv.roundRect(24, 48, 816, 276, 12, withAlpha('#000000', 0.9));
-                cv.text("Redline's HUD is off in " + modeName, 432, 176, 26, t.text, { align: 'center', font: 'bold' });
+                cv.text(translate("Redline's HUD is off in {mode}").replace('{mode}', translate(modeName)), 432, 176, 26, t.text, { align: 'center', font: 'bold' });
                 cv.text("BMW's own HUD shows instead. Pick Same as Sport or Its own to bring it back", 432, 212, 18, t.dim, { align: 'center' });
             }
             // the strip above the preview: which HUD this page edits (and, for Comfort, what it shows), in a quiet

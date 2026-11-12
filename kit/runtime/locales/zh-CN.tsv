@@ -1675,3 +1675,446 @@ Hybrid Eco Pro	混合动力节能
 Hybrid	混合动力
 Electric	纯电
 Give the HUD back to Cluster functions at switch-off	熄火后把 HUD 交还给 Cluster functions
+
+# iDrive apps: updated app descriptions, settings and runtime text
+Any colour on the ambient light, animations, and a look for each driving mode	自定义车内氛围灯颜色和动画，并按驾驶模式切换灯光。
+100-0 and 200-0 braking distance, peak decel and brake-fade tracking	测量 100–0 和 200–0 制动距离、峰值减速度，并记录制动热衰减。
+Live engine, thermal, intake / fuel / ignition, tyre and chassis gauges	实时显示发动机、温度、进气、燃油、点火、轮胎和底盘数据。
+Doom (Freedoom: Phase 1) on the iDrive. Main menu with all settings; the game drawn in full resolution across the whole screen, on the controller; BACK returns to the menu and saves	在 iDrive 上游玩《毁灭战士》（Freedoom 第一章）。用旋钮操作全屏游戏，按返回键保存并回到主菜单。
+0-100, 100-200 and 1/4 mile timer with best times	记录 0–100、100–200 和四分之一英里加速用时及最佳成绩。
+Read and clear fault memory of every control unit, plus active Check Control messages	读取和清除各控制单元的故障记录，并查看当前车辆检查控制信息。
+Power and torque curves from a full-throttle pull, saved and compared	记录全油门加速的功率与扭矩曲线，支持保存和比较。
+Real electric range, live battery power, cells and climate power, HV battery health (SOH) and energy, last charge, charge log, the 12 V battery (charge, voltage, what it does, regen, history) and a home-screen widget; on a 48 V mild hybrid its 48 V battery and DC/DC converter	显示实际纯电续航、电池功率、电芯、空调功耗、高压电池健康度和电量、充电记录、12 V 电池状态及历史，并提供主屏小组件。48 V 轻混车型还可查看电池和 DC/DC 转换器。
+Friction circle with grip envelope, peak g per direction and session records	显示抓地力包络、各方向 G 值峰值和本次行驶记录。
+Engine Config for BMW MGU ID7. Exhaust Flap: OEM, OPEN and CLOSE over the car's own diagnostic link, or following the driving mode (Sport open, Eco Pro closed); held against the DME's timeout, Close handed back above a set engine speed. With BM3 or MHD picked in Settings: engine map switching, burbles, ASD and Max Cooling. Experimental: xDrive off until the ignition cycle (DSC LMV_FUNKTION), behind its own setting	BMW MGU ID7 发动机配置。提供排气阀门设置、驾驶模式联动，以及适用车型的 BM3／MHD 选项和实验性 xDrive 设置。
+Read-only live values from the car and its control units, a trip computer with fuel cost, and gauge screens of your own, one of them as the home-screen widget	只读查看车辆和控制单元实时数据，计算行程与油费，自定义仪表页面和主屏小组件。
+Full-screen rev tach with shift lights, gear, shift scoring and cold-engine rev guard; HUD by @biscotit	全屏转速表，带换挡灯、挡位、换挡评分和冷机转速保护。HUD 由 @biscotit 制作。
+Service requirements from the instrument cluster: oil, brakes, brake fluid, vehicle check, inspection - distance, date, details; brake fluid and vehicle check reset	查看仪表中的机油、制动、制动液、车辆检查及年检到期里程和日期，支持复位制动液与车辆检查项目。
+Oil and coolant warm-up calculator (time to ready), safe rev limit and turbo cool-down	估算机油与冷却液达到工作温度的时间，并显示冷机转速限制和涡轮冷却状态。
+Transmission Config, experimental ZF 8HP monitor: live data, clutch fill adaptations, shift maps and temperature history	实验性 ZF 8HP 变速箱监测，查看实时数据、离合器充油自适应、换挡图谱和温度历史。
+Look by driving mode	按驾驶模式切换灯效
+Welcome sweep at start	启动时播放迎宾动画
+Sport pulse	运动模式脉冲灯效
+Dimmer at night	夜间调暗
+My colour back at each start	每次启动时恢复自定义颜色
+Redline shift flash	换挡提示闪灯
+Turn signal glow	转向灯联动
+Open door red	开门红色提示
+High beam strobe and light show (only for use on private property)	远光灯频闪和灯光秀（仅限私人场地）
+Strobe lights	频闪灯组
+All lights	所有灯组
+High beam	远光灯
+Strobe flashes a second	频闪次数（每秒）
+Max	最大
+Police flashes a burst	警示模式单组闪烁次数
+Strobe flash length	单次闪烁时长
+Police order	警示模式灯组顺序
+Left, both, right	左侧、两侧、右侧
+Left, right, both	左侧、右侧、两侧
+Left, right	左侧、右侧
+Strobe pattern	频闪模式
+Police	警示模式
+Strobe	频闪
+In turn	依次闪烁
+Strobe speed	频闪速度
+Light show speed	灯光秀速度
+Left	左侧
+Right	右侧
+Amber	琥珀色
+Animation	动画
+Animations	动画
+Another ambient app	其他氛围灯应用正在运行
+Any colour needs the body module, which did not answer.	自定义颜色需要车身模块响应，目前未收到响应。
+BMW's original colour	宝马原厂颜色
+BMW's own colours meanwhile:	可先选择宝马原厂颜色：
+Blue	蓝色
+Brightness	亮度
+Choose colour	选择颜色
+Colour	颜色
+Colour moving from the dash to the rear	颜色从仪表台向后排移动
+Colouring	配色区域
+Colours: on the Colour tab	请在「颜色」页调整配色
+Cyan	青色
+Delete	删除
+Driving modes	驾驶模式
+Empty	空白
+Every colour in turn	依次切换所有颜色
+Favourites	收藏
+Flashes a second	每秒闪烁次数
+Flashing headlights on public roads is illegal and dangerous	在公共道路上频闪前灯会危及其他驾驶员，
+to other drivers.	并可能违反当地法规。
+Green	绿色
+In the car	当前车内灯效
+Learn high beam	识别远光灯
+Light show	灯光秀
+Lights	灯组
+Look again	重新识别
+Lower	下部
+Lower lights	下部灯组
+No animation, a steady colour	固定颜色，无动画
+Nothing chosen: the Colour tab's colour. Tap Original colour again to undo it.	未单独设置时使用「颜色」页的配色。再次点击「原厂颜色」可取消。
+Only for use on private property.	仅限私人场地使用。
+Orange	橙色
+Original colour	原厂颜色
+Pattern	模式
+Pink	粉色
+Police: flashes a burst · flash · order (tap to change)	警示模式：组内次数 · 单次时长 · 灯组顺序（点击调整）
+Red	红色
+Save favourite	保存收藏
+Slowly brighter and dimmer	缓慢渐亮渐暗
+Someone in the car	车内有人
+Start show	开始灯光秀
+Start strobe	开始频闪
+Strobe stopped	频闪已停止
+Switched on in the settings	已在设置中开启
+Tap to save the look on now	点击保存当前灯效
+The Colour tab's colour	使用「颜色」页的配色
+Upper	上部
+Upper colour to lower colour and back	在上部与下部颜色之间渐变
+Upper lights	上部灯组
+Violet	紫色
+White	白色
+Whole car	全车
+Yellow	黄色
+L R Both	左、右、双侧
+L R	左、右
+L Both R	左、双侧、右
+Battery power	电池功率
+Fast (the car's eDRIVE needle)	快速（使用车辆 eDRIVE 指针）
+Battery readings only	仅电池数据
+Layout	布局
+Reset learned	清除学习数据
+Show on HUD (experimental)	在抬头显示上显示（实验性）
+Test pattern	测试图案
+HUD layout	HUD 布局
+Minimal (lights and gear)	极简（换挡灯与挡位）
+Split wings	双翼
+80s digital dash	80 年代数字仪表
+VFD glow (teal)	VFD 荧光（青绿色）
+Vector arcade (outlines)	矢量街机（轮廓）
+Arc (after the F80 / F82 M3 and M4)	弧形（F80／F82 M3 和 M4 风格）
+Ramp (after the G80 / G82 M3 and M4)	斜坡形（G80／G82 M3 和 M4 风格）
+Dial (after the E60 M5)	圆形表盘（E60 M5 风格）
+Pill (a sim-racing telemetry look)	胶囊式（模拟赛车遥测风格）
+In Comfort / Eco Pro	舒适／ECO PRO 模式
+Same HUD as Sport	沿用运动模式 HUD
+Its own HUD (set up on HUD looks)	独立 HUD（在 HUD 外观页设置）
+Don't show (BMW's own HUD)	关闭（显示原厂 HUD）
+Comfort HUD setup	舒适模式 HUD 设置
+In Hybrid / Electric	混动／纯电模式
+Hybrid HUD setup	混动模式 HUD 设置
+Directions on the HUD (experimental)	HUD 导航提示（实验性）
+While a route runs	导航进行时
+Near turns (under 1 km, and lanes)	接近转弯时（1 公里内，含车道提示）
+Directions left / right	导航提示左右位置
+Directions up / down	导航提示上下位置
+All HUD options here (else on the HUD looks page)	在此显示全部 HUD 选项（关闭后请前往 HUD 外观页）
+Shift point	换挡点
+Per gear, learned (experimental)	按挡位学习（实验性）
+Redline minus the setting below	红线转速减去下方设定值
+Minimum shift point	最低换挡转速
+Shift lights early by (reaction time, experimental)	换挡灯提前时间（反应时间，实验性）
+Light colours	灯光颜色
+Shift lights	换挡灯
+Rev bar	转速条
+From	起始
+Downshift arrows (experimental)	降挡箭头（实验性）
+While slowing down	减速时
+Arrows show	箭头提示方式
+Every gear you can drop	所有可降挡位
+Best gear (into the power band)	最佳挡位（进入动力区间）
+Learn from driving (redline, shift points, reaction time)	从驾驶中学习（红线、换挡点、反应时间）
+Learn redline from the limiter	根据限转器学习红线
+Boost unit	增压压力单位
+Fuel use unit	油耗单位
+mpg (UK)	英里／英制加仑
+mpg (US)	英里／美制加仑
+Tyre pressure unit	胎压单位
+HUD colours	HUD 配色
+Night amber	夜间琥珀色
+Ice white	冰白色
+Gear font	挡位字体
+Auto (Barlow on Arc and Dial, squared on Ramp)	自动（弧形与圆形用 Barlow，斜坡形用方体）
+Readout labels	数据标签
+Clearer (bigger, brighter)	清晰（更大、更亮）
+RPM shows as	转速显示方式
+Exact (to 10 rpm)	精确（10 rpm 步进）
+Steady (to 50 rpm)	稳定（50 rpm 步进）
+Thousands (4.5)	千转（例如 4.5）
+Unlit segments	未点亮灯段
+Dim	暗显
+Hidden	隐藏
+Light fill	灯段点亮顺序
+GT3 (outside in, flash)	GT3（由外向内，带闪烁）
+Left to right	从左到右
+Gearbox mode (D / S / M)	变速箱模式（D／S／M）
+Speed (km/h or mph, as Speed unit; on Ramp under the gear)	车速（随车速单位设置，斜坡布局中位于挡位下方）
+Power (from torque and rpm)	功率（根据扭矩与转速计算）
+G-force (sideways and braking / accelerating together)	G 值（同时显示横向与制动／加速）
+Knock retard (degrees, only while it retards)	爆震点火延迟（度，仅在延迟时显示）
+Fuel use (from the engine unit, experimental)	油耗（来自发动机控制单元，实验性）
+Water	冷却液
+Outside (blue at 3 °C / 37 °F and below)	车外温度（不高于 3 °C／37 °F 时显示蓝色）
+Tyres (the four pressures, coloured against their targets)	四轮胎压（按与目标胎压的差异着色）
+Cold-engine shift limit	冷机换挡转速限制
+Temperatures shown	温度显示条件
+Only when cold or hot	仅在过冷或过热时
+12 V battery charge (%)	12 V 电池电量（%）
+12 V battery voltage	12 V 电池电压
+Hybrid battery charge (%)	混动电池电量（%）
+Hybrid battery power (kW, + drive, - regen)	混动电池功率（kW，正值驱动，负值回收）
+Recovery / power bar (regen left, drive right)	能量条（左侧回收，右侧驱动）
+Hybrid battery temperature	混动电池温度
+Hybrid battery voltage	混动电池电压
+This car has a hybrid battery (found by the app)	本车装有混动电池（应用自动识别）
+Shift grade after each upshift	每次升挡后显示评分
+Burst (pops, ring)	爆发（粒子与圆环）
+Simple	简洁
+Knock warning (KNOCK when the engine pulls timing, experimental)	爆震警告（发动机延迟点火时显示，实验性）
+Launch time (0-100 km/h or 0-60 mph after a standing start, against your best)	起步计时（静止起步至 100 km/h 或 60 mph，与最佳成绩比较）
+Peak marker	峰值标记
+Shake on the limiter	触及限转时抖动
+Tyre widget (in the directions' corner; the directions come first)	轮胎小组件（与导航共用位置，导航优先）
+When a tyre is low	胎压偏低时
+Low or warming up	胎压偏低或轮胎升温中
+Tyre widget: the car	轮胎小组件：车辆示意图
+Tyre widget: each tyre's target	轮胎小组件：各轮目标胎压
+Tyre widget: tyre temperatures	轮胎小组件：轮胎温度
+This car sends tyre pressures (found by the app)	本车提供胎压数据（应用自动识别）
+Size	大小
+Position left / right	左右位置
+Position up / down	上下位置
+HUD frame rate	HUD 帧率
+HUD readouts refresh (faster: more work for the head unit)	HUD 数据刷新率（更快会增加主机负荷）
+ALERTS	警告
+ARROWS	箭头
+ARROWS TO	箭头指向
+Arc (F80 M3/M4)	弧形（F80 M3／M4）
+BMW's own HUD shows instead. Pick Same as Sport or Its own to bring it back	当前显示原厂 HUD。选择「沿用运动」或「独立设置」可恢复。
+Best gear	最佳挡位
+Bigger	更大
+Burst	爆发
+Car	车辆
+Clearer	清晰
+Cluster renderer	仪表渲染器
+Cold limit	冷机限制
+Colours	配色
+Colours, gear font, labels and how the rpm reads	配色、挡位字体、标签及转速显示方式
+Comfort / Eco	舒适／节能
+Comfort / Eco Pro	舒适／ECO PRO
+DASHED	虚线
+Dial (E60 M5)	圆形（E60 M5）
+Directions	导航提示
+Don't show	关闭显示
+Every gear	所有可用挡位
+Exact	精确
+GRADE	评分
+Gear mode	挡位模式
+HUD looks	HUD 外观
+HUD: off in the settings	HUD 已在设置中关闭
+HUD: on	HUD 已开启
+HUD: look	HUD 外观
+HUD: readouts	HUD 数据项
+HUD: alerts	HUD 警告
+HUD: place	HUD 位置
+HUD: tyres	HUD 轮胎
+HV CHARGE	高压电池电量
+HV KW	高压电池功率
+HV TEMP	高压电池温度
+HV VOLTS	高压电池电压
+Hybrid / Electric	混动／纯电
+Its own	独立设置
+KNOCK	爆震
+Knock warning	爆震警告
+LABELS	标签
+LAUNCH	起步
+LIMIT	限制
+LOOK	外观
+Launch time	起步计时
+Logs	日志
+MOVE	移动
+Minimal	极简
+No tyre sensors	无胎压传感器数据
+One colour	单色
+PLACE	位置
+Pill	胶囊式
+Play on HUD	在 HUD 播放
+Playing on the HUD...	正在 HUD 上播放…
+Power bar	能量条
+REACTION	反应
+READOUTS	数据项
+RPM AS	转速格式
+RPM PER KM/H	每 km/h 对应的转速
+Race	赛车配色
+Ramp (G80 M3/M4)	斜坡形（G80 M3／M4）
+Reset all	全部重置
+SHOWS	显示内容
+SOLID	实线
+Same as Sport	沿用运动
+Shake	抖动
+Shift points	换挡点
+Show on HUD is off (Settings)	「在 HUD 上显示」已关闭，可在设置中开启。
+Smaller	更小
+Steady	稳定
+Stop the car to play it on the HUD	请停车后再在 HUD 上播放。
+The HUD needs cluster-render: install Cluster renderer from the MGU Store	HUD 需要 cluster-render，请在 MGU Store 安装「仪表渲染器」。
+Thousands	千转
+Torque curve (full load)	全负荷扭矩曲线
+Tyre sensors	胎压传感器
+UNIT	单位
+UNLIT	未点亮
+VFD glow	VFD 荧光
+Vector arcade	矢量街机
+What Redline and the HUD did lately	换挡转速与 HUD 的近期活动
+When braking	制动时
+When low	偏低时
+guard: no strikes	保护机制：无异常记录
+set by hand	手动设置
+12V CHARGE	12 V 电池电量
+Comfort / Eco Pro uses the Sport HUD. Change anything here to give it its own.	舒适／ECO PRO 沿用运动模式 HUD。修改此处任意设置即可启用独立 HUD。
+Hybrid / Electric uses the Sport HUD. Change anything here to give it its own.	混动／纯电沿用运动模式 HUD。修改此处任意设置即可启用独立 HUD。
+Changes here only affect Comfort / Eco Pro, its size and place too.	此处的设置、大小和位置只影响舒适／ECO PRO 模式。
+Changes here only affect Hybrid / Electric, its size and place too.	此处的设置、大小和位置只影响混动／纯电模式。
+The shift lights and their colours (the screen uses them too); tap a part to show or hide it	设置换挡灯及其配色，中控屏共用。点击对应部分可显示或隐藏。
+Up to four show, in this order; a cold or hot one keeps its place. Units: Settings	按此顺序最多显示四项，过冷或过热的项目保留位置。单位在设置中调整。
+After an upshift, on knock, after a standing start; Shake: on the limiter. And the downshift arrows	设置升挡评分、爆震提示、起步计时、限转抖动及降挡箭头。
+Where the directions go, when they have no turn; it moves with them. Shown big here	轮胎组件与导航提示共用位置，无转弯提示时显示。此处为放大预览。
+Where the HUD of this setup sits on the glass	此布局在挡风玻璃上的显示位置
+Partly outside the windshield	部分超出挡风玻璃显示区域
+as measured on one car	依据单辆车的测量结果
+Cold-engine rev guard (Redline)	冷机转速保护（换挡转速）
+FRONT / REAR	前轴／后轴
+FRONT AXLE AGAINST REAR	前后轴对比
+FRONT AXLE TORQUE	前轴扭矩
+Read only · wheel slip compared between the wheels, above 5 km/h	只读 · 车速超过 5 km/h 时比较各车轮滑移
+Sport · holding	运动模式 · 保持中
+xDrive live	xDrive 实时数据
+AVERAGE EVERY	平均间隔
+ENGINE TIME	发动机运行时间
+From the temperature before the filter	依据滤清器上游温度
+Hotter than	高于
+OIL ASH	机油灰分
+PRESSURE ACROSS	前后压差
+REGENERATIONS	再生次数
+Regeneration	再生
+Since the last one	距上次再生
+TEMPERATURE BEFORE	上游温度
+New screen	新建页面
+Cost, this trip	本次行程费用
+Last 5 trips	最近 5 次行程
+max speed	最高车速
+No completed trip yet	暂无已完成的行程
+Fuel: the car's own fuel signal	油耗来源：车辆燃油信号
+A trip runs from the engine start until the engine has been off for 10 minutes. Currency: Settings.	行程从发动机启动开始，在熄火 10 分钟后结束。货币可在设置中更改。
+Names	名称格式
+English	英文
+German (BMW)	德文（宝马）
+BMW identifiers	宝马标识符
+Stop reading	停止读取
+Fuel injection signal (raw)	喷油原始信号
+Tyre pressure, front left	左前胎压
+Tyre pressure, front right	右前胎压
+Tyre pressure, rear left	左后胎压
+Tyre pressure, rear right	右后胎压
+Tyre temperature, front left	左前胎温
+Tyre temperature, front right	右前胎温
+Tyre temperature, rear left	左后胎温
+Tyre temperature, rear right	右后胎温
+Tyre pressure target, front left	左前目标胎压
+Tyre pressure target, front right	右前目标胎压
+Tyre pressure target, rear left	左后目标胎压
+Tyre pressure target, rear right	右后目标胎压
+Wheel speed, front left	左前轮速
+Wheel speed, front right	右前轮速
+Wheel speed, rear left	左后轮速
+Wheel speed, rear right	右后轮速
+Battery and charging	电池与充电
+Controller	控制器
+Battery state of charge now	当前电池荷电状态
+Boost pressure target	目标增压压力
+Outside air temperature	车外空气温度
+Throttle position (relative)	节气门相对位置
+Oil temperature	机油温度
+Per-shift map summary	各次换挡图谱摘要
+Next item: next pack	下一项：下一离合器组
+Next item: next temperature	下一项：下一温度项
+Next item: oil / electronics	下一项：油温／电子模块
+Gear engagement / release	挡位接合／释放
+EGS / oil service	变速箱／油液保养
+Fast-fill correction	快速充油修正
+Fast-fill evaluations	快速充油评估次数
+Base-point adaptation	基点自适应
+Base-point evaluations	基点评估次数
+Engage, mbar	接合压力（mbar）
+Engage evaluations	接合评估次数
+Release, mbar	释放压力（mbar）
+Operating time (no standby)	运行时间（不含待机）
+Stationary adaptations	静止自适应
+Oil-service temperature	油液保养温度
+Oil-service speed	油液保养转速
+Version	版本
+Summary	摘要
+Read again	重新读取
+Electronics	电子模块
+DUE BY	到期日期
+TIME LEFT	剩余时间
+DISTANCE LEFT	剩余里程
+Due by	到期日期
+Time left	剩余时间
+Distance left	剩余里程
+overdue	已逾期
+Front brake pads	前制动片
+Rear brake pads	后制动片
+Service Inclusive	保养套餐
+Particulate filter (OPF/DPF)	颗粒捕集器（OPF／DPF）
+State of Health	健康度
+Spark / glow plugs	火花塞／预热塞
+NOx additive	氮氧化物处理添加剂
+Visual inspection / vehicle check	目视检查／车辆检查
+Delivery inspection	交付检查
+Running-in check	磨合检查
+Water filter	水滤清器
+Statutory vehicle inspection (HU)	法定车辆检查（HU）
+Emissions inspection (AU)	排放检查（AU）
+Clutch	离合器
+First-aid kit	急救包
+Tyre repair kit	轮胎修补套件
+Catalytic converter	催化转换器
+Shock absorbers	减振器
+Service item	保养项目
+Diagnostics is read-only	诊断页面为只读
+Confirm reset	确认复位
+Resetting	正在复位
+CBS details	CBS 保养详情
+Read CBS	读取 CBS
+UDS / UNVERIFIED	UDS／未验证
+DEMO: diagnostic requests disabled	演示模式：诊断请求已禁用
+DEMO: diagnostic reads are disabled	演示模式：已禁用诊断读取
+January	1 月
+February	2 月
+March	3 月
+April	4 月
+May	5 月
+June	6 月
+July	7 月
+August	8 月
+September	9 月
+October	10 月
+November	11 月
+December	12 月
+Colour for {mode}	{mode}的颜色
+{mode} will look	{mode}灯效预览
+Changing {mode}'s look	正在调整{mode}的灯效
+It shows whenever {mode} is on.	切换到{mode}时会显示此灯效。
+Animation for {mode}	{mode}的动画
+On in the car: {count} lights	车内已启用 {count} 个灯组
+Looking for the car's lights...	正在查找车辆灯组…
+The car's lights did not answer	车辆灯组未响应
+Original colour (as set in BMW's menu)	原厂颜色（由宝马菜单设置）
+IterioDev's Comfort tool is running. It changes the ambient lights too, so the colours jump between the two apps. Uninstall it in the Store (Installed, Head-unit tools, Comfort) and use one ambient app at a time.	IterioDev 的 Comfort 工具正在运行。两个应用同时控制氛围灯时，灯色可能反复切换。可在商店的「已安装 → 车机工具」中卸载 Comfort，只保留一个氛围灯应用。
+Solid	固定颜色
+Breathing	呼吸灯
+Rainbow	彩虹
+Smooth fade	平滑渐变
+Colour wave	色彩波浪
+Redline's HUD is off in {mode}	{mode}模式的换挡转速 HUD 已关闭

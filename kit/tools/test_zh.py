@@ -17,13 +17,10 @@ expected_hmi_locales = [
 ]
 assert build.LANGS == expected_hmi_locales and len(build.LANGS) == 33
 credit = zh_credit()
-assert credit['corner'] == 'Translation by: 抖音 小白科技杂物社 · BiliBili 小白151 · GitHub JackieZ123430'
-assert credit['settingsTitle'] == 'Translation by: 抖音 小白科技杂物社 / BiliBili 小白151'
-assert credit['settingsLink'] == 'GitHub JackieZ123430 · github.com/JackieZ123430/idrive7-apps-cn'
-assert credit['comment'] == [
-    'Translation by: 抖音 小白科技杂物社 / BiliBili 小白151 / GitHub JackieZ123430',
-    'https://github.com/JackieZ123430/idrive7-apps-cn',
-]
+assert credit['corner'] == credit['settingsTitle'] == '汉化补译：5vess-'
+assert 'JackieZ123430' in credit['settingsLink']
+assert 'https://github.com/JackieZ123430/idrive7-apps-cn' in credit['comment']
+assert credit['comment'][-1] == credit['corner']
 revisions = json.loads((root / 'kit/tools/locale-revisions.json').read_text(encoding='utf-8'))
 # The translation credit ships in Chinese builds only (build.py adds it from kit/localization/credit.zh-CN.json):
 # nothing every package carries (an app's folder, the kit runtime) names the translator.
@@ -36,6 +33,10 @@ table_count = 0
 for manifest in sorted((root / 'apps').glob('*/app.json')):
     original = json.loads(manifest.read_text(encoding='utf-8'))
     assert not any(s['key'] == 'language' for s in original['settings'])
+    store_spec = localize_spec(original, 'zh-CN', manifest_version=True)
+    assert store_spec['version'] == original['version']
+    assert store_spec['title'] == original['texts']['zh-CN']['title']
+    assert store_spec['description'] == original['texts']['zh-CN']['description']
     keys = {}
     for language in package_languages:
         spec = localize_spec(original, language)
@@ -135,11 +136,14 @@ for (const [number, nominative, genitive] of months) {
     assert.strictEqual(parseRu(`15.${number}.2027`, now).text, `15 ${genitive} 2027`);
     assert.strictEqual(parseRu(`${number}.2027`, now).text, `${nominative} 2027`);
 }
-for (const language of ['en', 'zh-CN']) {
-    const parse = fixedParser(language, {});
-    assert.strictEqual(parse('15.09.2027', now).text, '15 September 2027');
-    assert.strictEqual(parse('09.2027', now).text, 'September 2027');
-}
+const parseEn = fixedParser('en', {});
+assert.strictEqual(parseEn('15.09.2027', now).text, '15 September 2027');
+assert.strictEqual(parseEn('09.2027', now).text, 'September 2027');
+const parseZh = fixedParser('zh-CN', {});
+assert.strictEqual(parseZh('15.09.2027', now).text, '2027年9月15日');
+assert.strictEqual(parseZh('09.2027', now).text, '2027年9月');
+assert.strictEqual(parseZh('01.2026', now).left, '本月');
+assert.strictEqual(parseZh('12.2025', now).left, '已逾期 1 个月');
 '''
 subprocess.run(['node', '-e', service_date_test, str(root / 'apps/service/main.js'),
                 str(root / 'kit/runtime/locales/ru.json')], check=True)

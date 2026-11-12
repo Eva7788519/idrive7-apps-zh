@@ -2,6 +2,7 @@
   "id": "edrive",
   "title": "eDrive",
   "description": "Real electric range, live battery power, cells and climate power, HV battery health (SOH) and energy, last charge, charge log, the 12 V battery (charge, voltage, what it does, regen, history) and a home-screen widget; on a 48 V mild hybrid its 48 V battery and DC/DC converter",
+  "texts": {"zh-CN": {"title": "EDrive助手", "description": "显示实际纯电续航、电池功率、电芯、空调功耗、高压电池健康度和电量、充电记录、12 V 电池状态及历史，并提供主屏小组件。48 V 轻混车型还可查看电池和 DC/DC 转换器。"}},
   "version": "2.9.1",
   "vendor": "custom",
   "loggingId": "OA9C",
